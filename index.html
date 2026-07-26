@@ -903,12 +903,16 @@
       </ul>
 
       <div class="exp-initiative">
-        <div class="exp-initiative-title">Google Chat Automation Bot</div>
-        <div class="exp-initiative-sub">Internal Process Automation Initiative · Kore.AI</div>
+        <div class="exp-initiative-title">Kore Support TicketLens</div>
+        <div class="exp-initiative-sub">AI-Powered Support Intelligence Platform · Kore.AI</div>
         <ul class="exp-initiative-bullets">
-          <li>Designed and deployed a Google Chat bot integrated with Google Workspace to fully automate the end-to-end incident management lifecycle — eliminating manual overhead and accelerating post-incident governance at scale.</li>
-          <li>Automated real-time incident documentation, RCA creation, multi-stage validation and approval workflows, and knowledge article generation — reducing process cycle time significantly.</li>
-          <li>Built automated reporting dashboards for weekly, monthly, and quarterly incident metrics, enabling data-driven leadership reviews without manual effort.</li>
+          <li>Architected and shipped a full-stack Node.js/Express platform unifying Zendesk, Jira, and multi-provider LLM analysis (OpenAI/Claude/Gemini) into a single support-intelligence tool, replacing manual ticket triage with real-time, streamed AI analysis across four analyst-facing modules including an RCA generator.</li>
+          <li>Built a live CS Dashboard processing 13,000+ tickets on a rolling 13-month window with server-side caching and disk persistence, cutting dashboard load from a 7-minute cold-start scan to instant load, with 5 live widgets and per-user saved filter views.</li>
+          <li>Automated the CSM escalation lifecycle end-to-end: a weighted, 10-category risk questionnaire scores each ticket, auto-writes Zendesk fields and an internal note, and pushes the ticket into a real-time approval queue — replacing manual escalation write-ups with a governed, auditable workflow.</li>
+          <li>Built the Escalation Dashboard as the CARE Team's approval workspace, enabling Approve / Hold / Reject / De-escalate decisions with live status sync back to the CSM's view (via SSE) and instant Google Chat notifications at every stage of the review cycle.</li>
+          <li>Delivered an Incident Management module with year-to-month-to-incident drill-down, one-way Confluence sync (real-time streamed log) to rebuild the incident database on demand, and one-click Confluence page generation from any logged incident.</li>
+          <li>Built an AI-assisted Major Incident Email Composer — auto-fills customer context from Zendesk, drafts and refines notification copy via GPT-4o, sends through the incident manager's own Gmail account, and auto-logs a confirmation note back to the ticket — cutting major-incident customer communication to a single guided workflow.</li>
+          <li>Engineered domain-restricted Google OAuth access and Dockerized deployment for team-wide availability across all modules above.</li>
         </ul>
       </div>
       </ul>
